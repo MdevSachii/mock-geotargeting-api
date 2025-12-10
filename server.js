@@ -16,7 +16,7 @@ app.get("/api/v1/check-license", (req, res) => {
 app.get("/api/v1/check-subscription", (req, res) => {
     res.status(200).json({
         status: "active",
-        domains_allowed: ["localhost", "127.0.0.1", "mock-geotargeting-api.fly.dev"],
+        domains_allowed: ["localhost", "127.0.0.1", "mock-geotargeting-api.fly.dev", "mock-geotargeting-api-production-3951.up.railway.app"],
         message: "Development subscription active (local mock)"
     });
 });
